@@ -1,0 +1,10 @@
+.inputfile::file-selector-button {
+    display: none;
+  }
+
+  .icon {
+    background: url(../images/file.png) no-repeat right;
+    background-size: 18px;
+    padding-right: "50px";
+    background-position-x: 95%;
+  }
