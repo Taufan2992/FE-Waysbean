@@ -109,6 +109,7 @@ function Profile() {
                         <div class="col-sm-5 pt-3 ps-3 pe-0">
                           <img
                             src={
+                            "https://waysbean.herokuapp.com/uploads/" +
                               data?.product?.image
                             }
                             class="card-img-top"
