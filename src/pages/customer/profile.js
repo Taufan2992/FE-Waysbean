@@ -20,11 +20,13 @@ function Profile() {
   // GET PROFILE DATA
   const getProfile = async () => {
     const response = await API.get("/user/" + ID);
+    console.log(response);
     setProfile(response?.data?.data);
   };
 
   let { data: transactions } = useQuery("transactionsCache", async () => {
     const response = await API.get("/transactionId");
+    console.log(response);
     return response.data.data;
   });
 
