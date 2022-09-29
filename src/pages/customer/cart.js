@@ -16,6 +16,9 @@ function Cart() {
     try{
         const response = await API.get("/cartuser");
         setCarts(response.data.data);
+        console.log('====================================');
+        console.log(response);
+        console.log('====================================');
   }catch(error){
     console.log(error);
    }
@@ -204,7 +207,6 @@ useEffect(() => {
                     <div className="col-md-2">
                       <img
                         src={
-                          "http://localhost:5000/uploads/" +
                           item?.product?.image
                         }
                         alt=""
