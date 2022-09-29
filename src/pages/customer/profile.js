@@ -23,12 +23,14 @@ function Profile() {
     console.log(response);
     setProfile(response?.data?.data);
   };
+  console.log(profile);
 
   let { data: transactions } = useQuery("transactionsCache", async () => {
     const response = await API.get("/transactionId");
     console.log(response);
     return response.data.data;
   });
+  console.log(transactions);
 
   useEffect(() => {
     getProfile();
