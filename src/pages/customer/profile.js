@@ -47,7 +47,7 @@ function Profile() {
           <div class="row">
             <div class="col-5">
               <img
-                src={"http://localhost:5000/uploads/" + profile?.image}
+                src={profile?.image}
                 class="card-img-top rounded"
                 alt="..."
                 style={{ width: 180, height: 220 }}
@@ -105,6 +105,7 @@ function Profile() {
                         <div class="col-sm-5 pt-3 ps-3 pe-0">
                           <img
                             src={
+                              "https://waysbean.herokuapp.com/uploads/" +
                               data?.product?.image
                             }
                             class="card-img-top"

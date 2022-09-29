@@ -104,7 +104,7 @@ function Navbaruser() {
                       <img
                         className="rounded-circle"
                         src={
-                          `http://localhost:5000/uploads/` + picture?.image || blank
+                          picture?.image || blank
                         }
                         width="50"
                         height="50"
